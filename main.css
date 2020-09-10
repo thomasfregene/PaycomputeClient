@@ -15,4 +15,9 @@ img[class=img-size]{
 }
 .nav-link:hover{
     color: white;
-}    
+}  
+
+.backdrop{
+    margin-top: 100px;
+}
+
