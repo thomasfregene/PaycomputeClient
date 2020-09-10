@@ -1,4 +1,18 @@
 
+/* navbar */
+.navbar{
+    background: rgba(0,0,0,0.9);
+}
+
 img[class=img-size]{
     height: 31px;
 }
+
+.nav-link{
+    color: white;
+    font-size: 1rem;
+    transition: color 1s linear;
+}
+.nav-link:hover{
+    color: white;
+}    
