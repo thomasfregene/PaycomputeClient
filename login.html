@@ -11,8 +11,8 @@
 </head>
 
 <body>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg">
+     <!-- navbar -->
+     <nav class="navbar navbar-expand-lg">
         <a href="#" class="navbar navbar-brand"><img src="img/Paycompute2.gif" class="img-size" alt="logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navLink">
             <span class="navbar-icon">
@@ -31,7 +31,7 @@
                     <a href="#" class="nav-link">Register</a>
                 </li>
                 <li class="nav-item">
-                    <a href="login.html" class="nav-link">Login</a>
+                    <a href="#" class="nav-link">Login</a>
                 </li>
             </ul>
         </div>
@@ -39,12 +39,32 @@
     <!-- end of navbar -->
 
     <!-- loginpage -->
-    <section class="backdrop">
+    <section class="backdrop" id="login">
         <div class="container ">
             <div class="row d-flex justify-content-center align-items-center">
-                <div class="col-md-6 text-center">
-                    <h3 class="text-style">Welcome</h3> 
-                    <p class="p-style">Paycompute Your Gateway To Ease HR Management</p>
+                <div class="col-md-4 right grid-margin">
+                    <h4 class="text-center">Welcome</h4>
+                    <h6 class="text-center">Please enter your username and password to Login</h6>
+
+                    <br>
+                    <br>
+                    <form>
+                        <div class="form-group col-md-12">
+                            <input type="text" class="form-control" placeholder="Username">
+                        </div>
+                        <div class="form-group col-md-12">
+                            <input type="password" class="form-control" placeholder="Password">
+                        </div>
+                        <div class="form-group col-md-12">
+                            <p><input type="checkbox"><span>&nbsp;</span> Remember Password</p>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <input type="submit" class="btn btn-warning btn-block" value="login">
+                        </div>
+                        <div class="form-group col-md-12 text-center">
+                            <a href="#">Forgot Password?</a>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
