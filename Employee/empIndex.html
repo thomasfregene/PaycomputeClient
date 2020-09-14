@@ -1,102 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../main.css">
-    <title>EmpIndex</title>
+    <title>Document</title>
 </head>
+
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 grid-margin mt-5">
-                <div class="card">
-                    <div class="card-body">
-                        <nav aria-label="breadcrumb" class="nav-border">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="../home.html" class="text-white text-dec">Home</a></li><span class="text-white">&nbsp;/&nbsp;</span>
-                                <li class="breadcrumb-item active" aria-current="page" disable><a href="#" class="text-white">Employee List</a></li>
-                            </ol>
-                        </nav><br><br>
-                        <div class="row">
-                            <div class="col-md-12 table-responsive-md">
-                                <a href="createEmp.html" class="btn btn-xs btn-outline-success float-md-right mb-2">New Employee</a>
-                                <table class="table table-striped">
-                                    <thead>
-                                        <tr class="text-white">
-                                            <th>Employee No.</th>
-                                            <th>Photo</th>
-                                            <th>Name</th>
-                                            <th>Gender</th>
-                                            <th>Designation</th>
-                                            <th>City</th>
-                                            <th>Joined</th>
-                                            <th></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody class="text-white">
-                                        <tr>
-                                            <td>EMP001</td>
-                                            <td></td>
-                                            <td>James Smith</td>
-                                            <td>Male</td>
-                                            <td>Manager</td>
-                                            <td>London</td>
-                                            <td>12/02/2020</td>
-                                        </tr>
-                                        <tr>
-                                            <td>EMP002</td>
-                                            <td></td>
-                                            <td>Becky John</td>
-                                            <td>Female</td>
-                                            <td>Staff</td>
-                                            <td>Leichester</td>
-                                            <td>12/02/2019</td>
-                                        </tr>
-                                        <tr>
-                                            <td>EMP003</td>
-                                            <td></td>
-                                            <td>Juliet Doe</td>
-                                            <td>Female</td>
-                                            <td>Asst. Manager</td>
-                                            <td>Chelsea</td>
-                                            <td>12/02/2020</td>
-                                        </tr>
-                                        <tr>
-                                            <td>EMP004</td>
-                                            <td></td>
-                                            <td>Paul Scholes</td>
-                                            <td>Male</td>
-                                            <td>Staff</td>
-                                            <td>Manchester City</td>
-                                            <td>12/02/2020</td>
-                                        </tr>
-                                        <tr>
-                                            <td>EMP005</td>
-                                            <td></td>
-                                            <td>John Doe</td>
-                                            <td>Male</td>
-                                            <td>Staff</td>
-                                            <td>London</td>
-                                            <td>12/02/2020</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+
+    <div class="container-scroller">
+        <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+            <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+                <a class="navbar-brand brand-logo"><img src="../img/Paycompute2.gif" alt="logo" /></a>
+            </div>
+            <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end text-dec">
+                <li class="nav-item">
+                    <a href="" class="mr-2">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="mr-2">Login</a>
+                </li>
+            </div>
+        </nav>
+        
+        <!-- @*side bar*@ -->
+        <div class="container-fluid page-body-wrapper">
+            <nav class="sidebar sidebar-offcanvas" id="sidebar">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#Employee" aria-expanded="false"
+                            aria-control="ui-basic">
+                            <i class="fas fa-user fa-lg text-primary" style="margin-right: 0.7em"></i>
+                            <span class="menu-title">Employee</span>
+                            <i class="nav-item"></i>
+                        </a>
+                        <div class="collapse" id="Employee">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"><a class="nav-link" href="Employee/createEmp.html"
+                                        >New Employee</a></li>
+                                <li class="nav-item"><a class="nav-link" href="Employee/empIndex.html"
+                                        >All Employees</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- @*payroll*@ -->
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#Payroll" aria-expanded="false"
+                            aria-control="ui-basic">
+                            <i class="fas fa-comment-dollar fa-lg text-primary" style="margin-right: 0.7em"></i>
+                            <span class="menu-title">Payroll</span>
+                            <i class="nav-item"></i>
+                        </a>
+                        <div class="collapse" id="Payroll">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"><a class="nav-link" href="Payment/createPay.html">New
+                                        Pay</a></li>
+                                <li class="nav-item"><a class="nav-link" href="Payment/payIndex.html">Payment
+                                        Records</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+            </nav>
+            <!-- all employee section -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 grid-margin mt-5">
+                        <div class="card">
+                            <div class="card-body">
+                                <nav aria-label="breadcrumb" class="nav-border">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="../home.html" class="text-white text-dec">Home</a></li><span class="text-white"></span>
+                                        <li class="breadcrumb-item active" aria-current="page" disable><a href="#" class="text-white">Employee List</a></li>
+                                    </ol>
+                                </nav><br><br>
+                                <div class="row">
+                                    <div class="col-md-12 table-responsive-md">
+                                        <a href="createEmp.html" class="btn btn-xs btn-outline-success float-md-right mb-2">New Employee</a>
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr class="text-white">
+                                                    <th>Employee No.</th>
+                                                    <th>Photo</th>
+                                                    <th>Name</th>
+                                                    <th>Gender</th>
+                                                    <th>Designation</th>
+                                                    <th>City</th>
+                                                    <th>Joined</th>
+                                                    <th></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="text-white">
+                                                <tr>
+                                                    <td>EMP001</td>
+                                                    <td></td>
+                                                    <td>James Smith</td>
+                                                    <td>Male</td>
+                                                    <td>Manager</td>
+                                                    <td>London</td>
+                                                    <td>12/02/2020</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>EMP002</td>
+                                                    <td></td>
+                                                    <td>Becky John</td>
+                                                    <td>Female</td>
+                                                    <td>Staff</td>
+                                                    <td>Leichester</td>
+                                                    <td>12/02/2019</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>EMP003</td>
+                                                    <td></td>
+                                                    <td>Juliet Doe</td>
+                                                    <td>Female</td>
+                                                    <td>Asst. Manager</td>
+                                                    <td>Chelsea</td>
+                                                    <td>12/02/2020</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>EMP004</td>
+                                                    <td></td>
+                                                    <td>Paul Scholes</td>
+                                                    <td>Male</td>
+                                                    <td>Staff</td>
+                                                    <td>Manchester City</td>
+                                                    <td>12/02/2020</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>EMP005</td>
+                                                    <td></td>
+                                                    <td>John Doe</td>
+                                                    <td>Male</td>
+                                                    <td>Staff</td>
+                                                    <td>London</td>
+                                                    <td>12/02/2020</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        
+            <!-- end of all employee section -->
+            <!-- <div class="main-panel">
+            
+            <footer class="footer">
+                <p>&copy; @DateTime.UtcNow.Year - Paycompute - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a></p>
+            </footer>
+        </div> -->
         </div>
+
     </div>
 
 
-     <!-- jquery -->
-     <script src="../js/jquery-3.5.1.min.js"></script>
-     <script src="../js/all.min.js"></script>
-     <script src="../js/main.js"></script>
-     <script src="../js/bootstrap.bundle.min.js"></script>
+    <!-- jquery -->
+    <script src="../js/jquery-3.5.1.min.js"></script>
+    <script src="../js/all.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
