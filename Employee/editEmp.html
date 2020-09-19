@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../main.css">
+    <title>Edit Employee</title>
+</head>
+<body>
+    <div class="container-scroll">
+        <nav class="navbar col-lg-12 p-0 fixed-top d-flex flex-row">
+            <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+                <a class="navbar-brand brand-logo"><img src="../img/Paycompute2.gif" alt="logo" /></a>
+            </div>
+            <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+                <li class="nav-item">
+                    <a href="" class="mr-2">Register</a>
+                    <a href="" class="mr-2">Login</a>
+                </li>
+            </div>
+        </nav>
+        <!-- sidebar -->
+        <div class="container-fluid page-body-wrapper">
+            <nav class="sidebar sidebar-offcanvas" id="sidebar">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="#Employee" class="nav-link" data-toggle="collapse" aria-expanded="false" aria-controls="ui-item">
+                            <i class="fas fa-user fa-lg text-primary" style="margin-right: 0.7em;"></i>
+                            <span class="menu-item">Employee</span>
+                            <i class="nav-item"></i>
+                        </a>
+                        <div class="collapse" id="Employee">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"><a href="../Employee/createEmp.html" class="nav-link">
+                                    New Employee
+                                </a></li>
+                                <li class="nav-item"><a href="../Employee/empIndex.html" class="nav-link">
+                                    All Employee
+                                </a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- payroll -->
+                    <li class="nav-item">
+                        <a href="#Payroll" class="nav-link" data-toggle="collapse" aria-expanded="false" aria-controls="ui-item">
+                            <i class="fas fa-dollar-sign fa-lg text-primary" style="margin-right: 0.7em;"></i>
+                            <span class="menu-item">Payroll</span>
+                            <i class="nav-item"></i>
+                        </a>
+                        <div class="collapse" id="Payroll">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"><a href="../Payment/createPay.html" class="nav-link">
+                                    New Payment
+                                </a></li>
+                                <li class="nav-item"><a href="../Payment/payIndex.html" class="nav-link">
+                                    Payment Record
+                                </a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <!-- end of sidebar -->
+
+            <!-- edit employee -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 grid-margin stretch-card mt-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="../home.html">Home</a></li>
+                                        <li class="breadcrumb-item"><a href="../Employee/empIndex.html">Employee List</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">New Employee</li>
+                                    </ol>
+                                </nav><br><br>
+                                <form>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-2">
+                                            <label for="employeeNo" class="text-white">Employee No</label>
+                                        </div>
+                                        <div class="form-group col-md-3">
+                                            <input type="text" class="form-control text-white bg-dark" id="employeeNo" placeholder="EMP000" disabled>
+                                        </div>
+                                        <div class="col-md-2"></div>
+                                        <div class="form-group col-md-2">
+                                            <label for="dateJoined" class="text-white">DateJoined</label>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input type="text" class="form-control text-white bg-dark" id="dateJoined" placeholder="Date Joined" disabled>
+                                        </div>
+                                    </div>
+        
+                                    
+                                    <div class="form-row">
+                                        <div class="form-group col-md-2">
+                                            <label for="firstName" class="text-white">First Name</label>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input type="text" class="form-control text-white bg-dark" id="firstName" readonly>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <input type="text" class="form-control" placeholder="Middle Name" id="middleName">
+                                        </div>
+                                        <div class="form-group col-md-2">
+                                            <label for="lastName" class="text-white">LastName</label>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input type="text" class="form-control text-white bg-dark" placeholder="Last Name" id="lastName" readonly>
+                                        </div>
+                                    </div>
+        
+                                    <div class="form-row">
+                                        <div class="form-group col-md-2">
+                                            <label for="gender" class="text-white">Gender</label>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <select name="gender" class="form-control">
+                                                <option value="gender" id="male">Male</option>
+                                                <option value="gender">Female</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-2"></div>
+                                        <div class="form-group col-md-2">
+                                            <label for="lastName" class="text-white">Date Of Birth</label>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input type="text" class="form-control text-white bg-dark" placeholder="Date Of Birth" id="dateOfBirth" readonly>
+                                        </div>
+                                    </div>
+        
+                                    <div class="form-row">
+                                        <div class="form-group col-md-2">
+                                            <label for="nINo" class="text-white">NI No</label>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input type="text" class="form-control text-white bg-dark" placeholder="Enter Ni Number" id="niNo" readonly>
+                                        </div>
+                                        <div class="col-md-2">
+                                        </div>
+                                        <div class="form-group col-md-2">
+                                            <label for="email" class="text-white">Email</label>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input type="email" class="form-control" placeholder="Email" id="email">
+                                        </div>
+                                    
+                                    </div>
+                                    
+                                    <div class="form-row">
+                                        <div class="form-group col-md-2">
+                                            <label for="firstName" class="text-white">Phone No</label>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input type="text" class="form-control" placeholder="Enter Phone No" id="phoneNo">
+                                        </div>
+                                        <div class="col-md-2">
+                                        </div>
+                                        <div class="form-group col-md-2">
+                                            <label for="lastName" class="text-white">Payment Method</label>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <select name="paymentMethod" class="form-control" id="paymentMethod">
+                                                <option value="paymentMethod" id="bank">Bank</option>
+                                                <option value="paymentMethod">Cash</option>
+                                                <option value="paymentMethod">Cheque</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-row">
+                                        <div class="form-group col-md-2">
+                                            <label for="studentLoan" class="text-white">Student Loan</label>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <select name="studentLoan" class="form-control" id="studentLoan">
+                                                <option value="studentLoan">Yes</option>
+                                                <option value="studentLoan" id="no">No</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-2">
+                                        </div>
+                                        <div class="form-group col-md-2">
+                                            <label for="unionMember" class="text-white">Union Member</label>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <select name="unionMember" class="form-control" id="unionMember">
+                                                <option value="unionMember" id="yes">Yes</option>
+                                                <option value="unionMember">No</option>
+                                            </select>
+                                        </div>
+                                    </div>
+        
+                                    <div class="form-row">
+                                        <div class="form-group col-md-2">
+                                            <label for="designation" class="text-white">Designation</label>
+                                        </div>
+                                        <div class="col-md-3">
+                                          <input type="text" class="form-control" placeholder="Enter Role" id="designation">
+                                        </div>
+                                        <div class="col-md-2"></div>
+                                        <div class="form-group col-md-2">
+                                            <label for="Photo" class="text-white">Photo</label>
+                                        </div>
+                                        <div class="col-md-3 btn btn-primary btn-icon-text">
+                                               <i class="fas fa-cloud-upload-alt"></i>
+                                               <input type="file" id="photo">
+                                        </div>
+                                    </div>
+        
+                                    <div class="form-group">
+                                        <label for="address" class="text-white">Address</label>
+                                        <input type="text" class="form-control" placeholder="Enter Address" id="address">
+                                    </div>
+        
+                                    <div class="form-group">
+                                        <label for="city" class="text-white">City</label>
+                                        <input type="text" class="form-control" placeholder="Enter City" id="city">
+                                    </div>
+        
+                                    <div class="form-group">
+                                        <label for="postalCode" class="text-white">Postal Code</label>
+                                        <input type="text" class="form-control" placeholder="Enter Postal Code" id="postalCode">
+                                    </div>
+                                    <br><br>
+                                    <div class="form-group">
+                                        <button class="btn btn-rounded btn-primary float-left"><i class="fas fa-plus-square"></i> Save</button>
+                                        <a href="../Employee/empIndex.html" class="btn btn-rounded btn-success float-right"><i class="fas fa-caret-square-left"></i>Back</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jquery -->
+    <script src="../js/jquery-3.5.1.min.js"></script>
+    <script src="../js/all.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
