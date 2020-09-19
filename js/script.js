@@ -16,4 +16,5 @@ $(document).ready(function(){
     $("#address").val('12 Johnson Road')
     $("#city").val('Man City')
     $("#postalCode").val('10106')
+    
 })
