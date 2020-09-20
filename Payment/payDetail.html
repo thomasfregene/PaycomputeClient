@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Payment</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../main.css">
+        <title>Delete Employee</title>
+    </head>
+
+    <body>
+        <div class="container-scroll">
+            <nav class="navbar col-lg-12 p-0 fixed-top d-flex flex-row">
+                <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+                    <a class="navbar-brand brand-logo"><img src="../img/Paycompute2.gif" alt="logo" /></a>
+                </div>
+                <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+                    <li class="nav-item">
+                        <a href="" class="mr-2">Register</a>
+                        <a href="" class="mr-2">Login</a>
+                    </li>
+                </div>
+            </nav>
+            <!-- sidebar -->
+            <div class="container-fluid page-body-wrapper">
+                <nav class="sidebar sidebar-offcanvas" id="sidebar">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a href="#Employee" class="nav-link" data-toggle="collapse" aria-expanded="false"
+                                aria-controls="ui-item">
+                                <i class="fas fa-user fa-lg text-primary" style="margin-right: 0.7em;"></i>
+                                <span class="menu-item">Employee</span>
+                                <i class="nav-item"></i>
+                            </a>
+                            <div class="collapse" id="Employee">
+                                <ul class="nav flex-column sub-menu">
+                                    <li class="nav-item"><a href="../Employee/createEmp.html" class="nav-link">
+                                            New Employee
+                                        </a></li>
+                                    <li class="nav-item"><a href="../Employee/empIndex.html" class="nav-link">
+                                            All Employee
+                                        </a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- payroll -->
+                        <li class="nav-item">
+                            <a href="#Payroll" class="nav-link" data-toggle="collapse" aria-expanded="false"
+                                aria-controls="ui-item">
+                                <i class="fas fa-dollar-sign fa-lg text-primary" style="margin-right: 0.7em;"></i>
+                                <span class="menu-item">Payroll</span>
+                                <i class="nav-item"></i>
+                            </a>
+                            <div class="collapse" id="Payroll">
+                                <ul class="nav flex-column sub-menu">
+                                    <li class="nav-item"><a href="../Payment/createPay.html" class="nav-link">
+                                            New Payment
+                                        </a></li>
+                                    <li class="nav-item"><a href="../Payment/payIndex.html" class="nav-link">
+                                            Payment Record
+                                        </a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- end of sidebar -->
+
+                <!-- Delete employee -->
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 grid-margin stretch-card mt-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <nav aria-label="breadcrumb">
+                                        <ol class="breadcrumb">
+                                            <li class="breadcrumb-item"><a href="../home.html">Home</a></li>
+                                            <li class="breadcrumb-item"><a href="../Payment/payIndex.html">Payroll
+                                                    List</a></li>
+                                            <li class="breadcrumb-item active" aria-current="page">Pay Computation Detail</li>
+                                        </ol>
+                                    </nav><br><br>
+                                    <!-- payDetails payment -->
+                                   <form>
+                                       <div class="form-row">
+                                           <div class="form-group col-md-2 font-weight-bold">
+                                               <label for="fullName">Full Name</label>
+                                           </div>
+                                           <div class="form-group col-md-4 font-italic font-weight-bolder">
+                                               <input type="text" class="form-control  text-weight bg-dark" id="fullName" readonly>
+                                           </div>
+
+                                           <div class="form-group col-md-2"></div>
+                                           
+                                           <div class="form-group col-md-1 font-weight-bold">
+                                               <label for="niNo">Ni No</label>
+                                           </div>
+                                           <div class="form-group col-md-3 font-italic font-weight-bolder">
+                                            <input type="text" class="form-control  text-weight bg-dark" id="niNo" readonly>
+                                           </div>
+                                       </div><br><br>
+                                       <h3>Date and Hours</h3>
+                                       <hr style="background-color:crimson">
+                                       <div class="form-row">
+                                           <div class="form-group col-md-1 font-weight-bold">
+                                               <label for="payMonth">Pay Month</label>
+                                           </div>
+                                           <div class="form-group col-md-3">
+                                               <input type="text" class="form-control text-white bg-dark" id="payMonth" readonly>
+                                           </div>
+
+                                           <div class="form-group col-md-1 font-weight-bold">
+                                               <label for="year">Year</label>
+                                           </div>
+                                           <div class="form-group col-md-3">
+                                               <input type="text" class="form-control text-white bg-dark" id="year" readonly>
+                                           </div>
+
+                                           <div class="form-group col-md-1 font-weight-bold">
+                                               <label for="payDay">Pay Day</label>
+                                           </div>
+                                           <div class="form-group col-md-3">
+                                               <input type="text" class="form-control text-white bg-dark" id="payDay" readonly>
+                                           </div>
+                                       </div>
+                                       <div class="form-row">
+                                           <div class="form-group col-md-1 font-weight-bold">
+                                               <label for="hourlyRate">Hourly Rate</label>
+                                           </div>
+                                           <div class="form-group col-md-3">
+                                               <input type="number" class="form-control text-white bg-dark" id="hourlyRate" readonly>
+                                           </div>
+
+                                           <div class="form-group col-md-1 font-weight-bold">
+                                               <label for="hoursWorked">Hours Worked</label>
+                                           </div>
+                                           <div class="form-group col-md-3">
+                                               <input type="number" class="form-control text-white bg-dark" id="hoursWorked" readonly>
+                                           </div>
+
+                                           <div class="form-group col-md-1 font-weight-bold">
+                                               <label for="contractualHours">Contractual Hours</label>
+                                           </div>
+                                           <div class="form-group col-md-3">
+                                               <input type="number" class="form-control text-white bg-dark" id="contractualHours" readonly>
+                                           </div>
+                                       </div>
+                                       <div class="form-row">
+                                           <div class="col-md-4"></div>
+
+                                           <div class="form-group col-md-1 font-weight-bold">
+                                               <label for="overtimeRate">Overtime Rate</label>
+                                           </div>
+                                           <div class="form-group col-md-3">
+                                               <input type="number" class="form-control text-white bg-dark" id="overtimeRate" readonly>
+                                           </div>
+                                           <div class="form-group col-md-1 font-weight-bold">
+                                               <label for="overtimeHours">Overtime Hours</label>
+                                           </div>
+                                           <div class="form-group col-md-3">
+                                               <input type="number" class="form-control  text-white bg-dark"  id="overtimeHours" readonly>
+                                           </div>
+                                       </div><br>
+                                       <h3>Deductions</h3>
+                                       <hr style="background-color: crimson;">
+                                       <div class="form-row">
+                                           <div class="form-group col-md-1 font-weight-bold">
+                                               <label for="taxCode">Tax Code</label>
+                                           </div>
+                                           <div class="form-group col-md-3">
+                                               <input type="number" class="form-control text-white bg-dark" id="taxCode" readonly>
+                                           </div>
+                                           <div class="form-group col-md-1 font-weight-bold">
+                                               <label for="tax">Tax</label>
+                                           </div>
+                                           <div class="form-group col-md-3">
+                                               <input type="number" class="form-control text-white bg-dark" id="tax" readonly>
+                                           </div>
+                                           <div class="form-group col-md-1 font-weight-bold">
+                                               <label for="nic">NIC</label>
+                                           </div>
+                                           <div class="form-group col-md-3">
+                                               <input type="number" class="form-control text-white bg-dark" id="nic">
+                                           </div>
+                                       </div>
+                                       <div class="form-row">
+                                           <div class="form-group col-md-4"></div>
+                                           <div class="form-group col-md-1 font-weight-bold">
+                                               <label for="slc">SLC</label>
+                                           </div>
+                                           <div class="form-group col-md-3">
+                                               <input type="number" class="form-control text-white bg-dark" id="slc" readonly>
+                                           </div>
+                                           <div class="form-group col-md-1 font-weight-bold">
+                                               <label for="unionFee">Union Fee</label>
+                                           </div>
+                                           <div class="form-group col-md-3">
+                                               <input type="number" class="form-control text-white bg-dark" id="unionFee" readonly>
+                                           </div>
+
+                                           <div class="form-group col-md-8"></div>
+                                           <div class="form-group col-md-1 font-weight-bold">
+                                               <label for="totalDeduction">Total Deduction</label>
+                                           </div>
+                                           <div class="form-group col-md-3">
+                                               <input type="number" class="form-control text-white bg-dark" id="totalDeduction" readonly>
+                                           </div><br>
+                                       </div>
+                                       <h3>Earnings</h3>
+                                       <hr style="background-color: crimson;">
+                                       <div class="form-row">
+                                           <div class="form-group col-md-1 font-weight-bold">
+                                               <label for="contractualEarnings">Contractual Earnings</label>
+                                           </div>
+                                           <div class="form-group col-md-3">
+                                               <input type="number" class="form-control text-white bg-dark" id="contractualEarnings" readonly>
+                                           </div>
+                                           <div class="form-group col-md-1 font-weight-bold">
+                                               <label for="overtimeEarnings">Overtime Earnings</label>
+                                           </div>
+                                           <div class="form-group col-md-3">
+                                               <input type="number" class="form-control text-white bg-dark" id="overtimeEarnings" readonly>
+                                           </div>
+                                           <div class="form-group col-md-1 font-weight-bold">
+                                               <label for="totalEarnings">Total Earnings</label>
+                                           </div>
+                                           <div class="form-group col-md-3">
+                                               <input type="number" class="form-control text-white bg-dark" id="totalEarnings" readonly>
+                                           </div>
+                                       </div>
+                                       <div class="form-row">
+                                           <div class="form-group col-md-8"></div>
+                                           <div class="form-group col-md-1 font-weight-bold">
+                                               <label for="netPayment">Net Payment</label>
+                                           </div>
+                                           <div class="form-group col-md-3">
+                                               <input type="number" class="form-control text-white bg-dark" id="netPayment" readonly>
+                                           </div>
+                                       </div><br><br>
+                                   </form><br><br>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- jquery -->
+        <script src="../js/jquery-3.5.1.min.js"></script>
+        <script src="../js/all.min.js"></script>
+        <script src="../js/main.js"></script>
+        <script src="../js/script.js"></script>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+    </body>
+
+    </html>
+</body>
+
+</html>
