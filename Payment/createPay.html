@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Payment</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../main.css">
+        <title>Delete Employee</title>
+    </head>
+
+    <body>
+        <div class="container-scroll">
+            <nav class="navbar col-lg-12 p-0 fixed-top d-flex flex-row">
+                <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+                    <a class="navbar-brand brand-logo"><img src="../img/Paycompute2.gif" alt="logo" /></a>
+                </div>
+                <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+                    <li class="nav-item">
+                        <a href="" class="mr-2">Register</a>
+                        <a href="" class="mr-2">Login</a>
+                    </li>
+                </div>
+            </nav>
+            <!-- sidebar -->
+            <div class="container-fluid page-body-wrapper">
+                <nav class="sidebar sidebar-offcanvas" id="sidebar">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a href="#Employee" class="nav-link" data-toggle="collapse" aria-expanded="false"
+                                aria-controls="ui-item">
+                                <i class="fas fa-user fa-lg text-primary" style="margin-right: 0.7em;"></i>
+                                <span class="menu-item">Employee</span>
+                                <i class="nav-item"></i>
+                            </a>
+                            <div class="collapse" id="Employee">
+                                <ul class="nav flex-column sub-menu">
+                                    <li class="nav-item"><a href="../Employee/createEmp.html" class="nav-link">
+                                            New Employee
+                                        </a></li>
+                                    <li class="nav-item"><a href="../Employee/empIndex.html" class="nav-link">
+                                            All Employee
+                                        </a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- payroll -->
+                        <li class="nav-item">
+                            <a href="#Payroll" class="nav-link" data-toggle="collapse" aria-expanded="false"
+                                aria-controls="ui-item">
+                                <i class="fas fa-dollar-sign fa-lg text-primary" style="margin-right: 0.7em;"></i>
+                                <span class="menu-item">Payroll</span>
+                                <i class="nav-item"></i>
+                            </a>
+                            <div class="collapse" id="Payroll">
+                                <ul class="nav flex-column sub-menu">
+                                    <li class="nav-item"><a href="../Payment/createPay.html" class="nav-link">
+                                            New Payment
+                                        </a></li>
+                                    <li class="nav-item"><a href="../Payment/payIndex.html" class="nav-link">
+                                            Payment Record
+                                        </a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- end of sidebar -->
+
+                <!-- Delete employee -->
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 grid-margin stretch-card mt-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <nav aria-label="breadcrumb">
+                                        <ol class="breadcrumb">
+                                            <li class="breadcrumb-item"><a href="../home.html">Home</a></li>
+                                            <li class="breadcrumb-item"><a href="../Payment/payIndex.html">Payroll
+                                                    List</a></li>
+                                            <li class="breadcrumb-item active" aria-current="page">Pay Computation</li>
+                                        </ol>
+                                    </nav><br><br>
+                                    <!-- create payment -->
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="employeeId">Employee No</label>
+                                            <select name="employeeId" class="form-control" id="employeeId">
+                                                <option value="employeeId">---Select Emplyee Id---</option>
+                                                <option value="employeeId">EMP001</option>
+                                                <option value="employeeId">EMP002</option>
+                                                <option value="employeeId">EMP003</option>
+                                            </select>
+                                        </div><br><br><br>
+
+                                        <div class="form-row">
+                                            <div class="form-group col-md-1">
+                                                <label for="payMonth">Pay Month</label>
+                                            </div>
+                                            <div class="form-group-col-md-3">
+                                                <select name="payMonth" class="form-control" id="employeeId">
+                                                    <option value="payMonth">---Select Month---</option>
+                                                    <option value="payMonth">January</option>
+                                                    <option value="payMonth">February</option>
+                                                    <option value="payMonth">March</option>
+                                                    <option value="payMonth">April</option>
+                                                    <option value="payMonth">May</option>
+                                                    <option value="payMonth">June</option>
+                                                    <option value="payMonth">July</option>
+                                                    <option value="payMonth">August</option>
+                                                    <option value="payMonth">September</option>
+                                                    <option value="payMonth">October</option>
+                                                    <option value="payMonth">November</option>
+                                                    <option value="payMonth">December</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="form-group col-md-1">
+                                                <label for="taxYearId">TaxYear Id</label>
+                                            </div>
+                                            <div class="form-group col-md-3">
+                                                <select name="taxYearId" class="form-control" id="taxYearId">
+                                                    <option value="taxYearId">---Select Tax Year---</option>
+                                                    <option value="taxYearId">2018/2019</option>
+                                                    <option value="taxYearId">2019/2020</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="form-group col-md-1">
+                                                <label for="taxYearId">Pay Date</label>
+                                            </div>
+                                            <div class="form-group col-md-3">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-row">
+                                            <div class="form-group col-md-1">
+                                                <label for="hourlyRate">Hourly Rate</label>
+                                            </div>
+                                            <div class="form-group col-md-3">
+                                                <input type="text" class="form-control" placeholder="0.00">
+                                            </div>
+
+                                            <div class="form-group col-md-1">
+                                                <label for="hoursWorked">Hours Worked</label>
+                                            </div>
+                                            <div class="form-group col-md-3">
+                                                <input type="text" class="form-control" placeholder="0.00">
+                                            </div>
+
+                                            <div class="form-group col-md-1">
+                                                <label for="contractualHours">Contractual Hours</label>
+                                            </div>
+                                            <div class="form-group col-md-3">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div><br><br>
+
+                                        <div class="form-group">
+                                            <a href="../Payment/payIndex.html" class="btn btn-rounded btn-primary float-left"><i class="fas fa-calculator"></i> Compute & Save</a>
+                                        <a href="../Payment/payIndex.html" class="btn btn-rounded btn-success float-right"><i class="fas fa-caret-square-left"></i> Back To Pay List</a>
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- jquery -->
+        <script src="../js/jquery-3.5.1.min.js"></script>
+        <script src="../js/all.min.js"></script>
+        <script src="../js/main.js"></script>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+    </body>
+
+    </html>
+</body>
+
+</html>
