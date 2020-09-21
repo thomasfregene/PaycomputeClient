@@ -1,5 +1,5 @@
 body{
-    background: lightgray;
+    background: white;
 }
 
 
@@ -55,6 +55,14 @@ img[class=img-size]{
     li.nav-item{
         list-style: none;
         font-size: 1rem;
+    }
+
+    .tb{
+        font-size: medium;
+    }
+
+    .br{
+        text-justify: auto;
     }
 
 
