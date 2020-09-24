@@ -65,5 +65,10 @@ img[class=img-size]{
         text-justify: auto;
     }
 
+    .bg{
+        /* background: rgba(0,0,0,0.95); */
+        background: rgb(33, 31, 43);
+    }
+
 
 
