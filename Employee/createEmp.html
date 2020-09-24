@@ -19,14 +19,14 @@
             </div>
             <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end text-dec">
                 <li class="nav-item">
-                    <a href="" class="mr-2">Register</a>
+                    <a href="../register.html" class="mr-2 mr-5">Register</a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="mr-2">Login</a>
+                    <a href="../login.html" class="mr-2">Login</a>
                 </li>
             </div>
         </nav>
-        
+
         <!-- @*side bar*@ -->
         <div class="container-fluid page-body-wrapper">
             <nav class="sidebar sidebar-offcanvas" id="sidebar">
@@ -40,10 +40,10 @@
                         </a>
                         <div class="collapse" id="Employee">
                             <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"><a class="nav-link" href="../Employee/createEmp.html"
-                                        >New Employee</a></li>
-                                <li class="nav-item"><a class="nav-link" href="../Employee/empIndex.html"
-                                        >All Employees</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../Employee/createEmp.html">New
+                                        Employee</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../Employee/empIndex.html">All
+                                        Employees</a></li>
                             </ul>
                         </div>
                     </li>
@@ -51,7 +51,7 @@
                     <li class="nav-item">
                         <a class="nav-link" data-toggle="collapse" href="#Payroll" aria-expanded="false"
                             aria-control="ui-basic">
-                            <i class="fas fa-comment-dollar fa-lg text-primary" style="margin-right: 0.7em"></i>
+                            <i class="fas fa-dollar-sign fa-lg text-primary" style="margin-right: 0.7em"></i>
                             <span class="menu-title">Payroll</span>
                             <i class="nav-item"></i>
                         </a>
@@ -68,15 +68,16 @@
                 </ul>
             </nav>
             <!-- new employee section -->
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 grid-margin stretch-card mt-3">
+            <div class="container bg">
+                <div class="row m-3">
+                    <div class="col-md-12 grid-margin stretch-card mt-3 mb-0">
                         <div class="card">
                             <div class="card-body">
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb">
                                         <li class="breadcrumb-item"><a href="../home.html">Home</a></li>
-                                        <li class="breadcrumb-item"><a href="../Employee/empIndex.html">Employee List</a></li>
+                                        <li class="breadcrumb-item"><a href="../Employee/empIndex.html">Employee
+                                                List</a></li>
                                         <li class="breadcrumb-item active" aria-current="page">New Employee</li>
                                     </ol>
                                 </nav><br><br>
@@ -96,8 +97,8 @@
                                             <input type="text" class="form-control" placeholder="Date Joined">
                                         </div>
                                     </div>
-        
-                                    
+
+
                                     <div class="form-row">
                                         <div class="form-group col-md-2">
                                             <label for="firstName" class="text-white">First Name</label>
@@ -115,7 +116,7 @@
                                             <input type="text" class="form-control" placeholder="Last Name">
                                         </div>
                                     </div>
-        
+
                                     <div class="form-row">
                                         <div class="form-group col-md-2">
                                             <label for="firstName" class="text-white">Gender</label>
@@ -134,7 +135,7 @@
                                             <input type="text" class="form-control" placeholder="Date Of Birth">
                                         </div>
                                     </div>
-        
+
                                     <div class="form-row">
                                         <div class="form-group col-md-2">
                                             <label for="nINo" class="text-white">NI No</label>
@@ -150,9 +151,9 @@
                                         <div class="col-md-3">
                                             <input type="email" class="form-control" placeholder="Email">
                                         </div>
-                                    
+
                                     </div>
-                                    
+
                                     <div class="form-row">
                                         <div class="form-group col-md-2">
                                             <label for="firstName" class="text-white">Phone No</label>
@@ -173,7 +174,7 @@
                                             </select>
                                         </div>
                                     </div>
-                                    
+
                                     <div class="form-row">
                                         <div class="form-group col-md-2">
                                             <label for="studentLoan" class="text-white">Student Loan</label>
@@ -196,58 +197,62 @@
                                             </select>
                                         </div>
                                     </div>
-        
+
                                     <div class="form-row">
                                         <div class="form-group col-md-2">
                                             <label for="designation" class="text-white">Designation</label>
                                         </div>
                                         <div class="col-md-3">
-                                          <input type="text" class="form-control" placeholder="Enter Role">
+                                            <input type="text" class="form-control" placeholder="Enter Role">
                                         </div>
                                         <div class="col-md-2"></div>
                                         <div class="form-group col-md-2">
                                             <label for="Photo" class="text-white">Photo</label>
                                         </div>
                                         <div class="col-md-3 btn btn-primary btn-icon-text">
-                                               <i class="fas fa-cloud-upload-alt"></i>
-                                               <input type="file">
+                                            <i class="fas fa-cloud-upload-alt"></i>
+                                            <input type="file">
                                         </div>
                                     </div>
-        
+
                                     <div class="form-group">
                                         <label for="address" class="text-white">Address</label>
                                         <input type="text" class="form-control" placeholder="Enter Address">
                                     </div>
-        
+
                                     <div class="form-group">
                                         <label for="city" class="text-white">City</label>
                                         <input type="text" class="form-control" placeholder="Enter City">
                                     </div>
-        
+
                                     <div class="form-group">
                                         <label for="postalCode" class="text-white">Postal Code</label>
                                         <input type="text" class="form-control" placeholder="Enter Postal Code">
                                     </div>
                                     <br><br>
                                     <div class="form-group">
-                                        <a href="../Employee/empIndex.html" class="btn btn-rounded btn-primary float-left"><i class="fas fa-caret-square-left"></i> Save</a>
-                                        <a href="../Employee/empIndex.html" class="btn btn-rounded btn-success float-right"><i class="fas fa-caret-square-left"></i> Back</a>
+                                        <a href="../Employee/empIndex.html"
+                                            class="btn btn-rounded btn-primary float-left"><i
+                                                class="fas fa-caret-square-left"></i> Save</a>
+                                        <a href="../Employee/empIndex.html"
+                                            class="btn btn-rounded btn-success float-right"><i
+                                                class="fas fa-caret-square-left"></i> Back</a>
                                     </div>
                                 </form>
                             </div>
+
                         </div>
                     </div>
+                    <div>
+                        <footer class="footer mt-0 p-0">
+                            <p>&copy; 2020 - Paycompute - <a href="">Privacy</a></p>
+                        </footer>
+                    </div>
                 </div>
-            </div> 
-        
-            <!-- end of new employee section -->
-            <!-- <div class="main-panel">
-            
-            <footer class="footer">
-                <p>&copy; @DateTime.UtcNow.Year - Paycompute - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a></p>
-            </footer>
-        </div> -->
+            </div>
+
         </div>
+       
 
     </div>
 
