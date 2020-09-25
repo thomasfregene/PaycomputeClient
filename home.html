@@ -19,14 +19,14 @@
             </div>
             <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end text-dec">
                 <li class="nav-item">
-                    <a href="" class="mr-2">Register</a>
+                    <a href="register.html" class="mr-5">Register</a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="mr-2">Login</a>
+                    <a href="login.html" class="mr-2">Login</a>
                 </li>
             </div>
         </nav>
-        
+
         <!-- @*side bar*@ -->
         <div class="container-fluid page-body-wrapper">
             <nav class="sidebar sidebar-offcanvas" id="sidebar">
@@ -40,10 +40,10 @@
                         </a>
                         <div class="collapse" id="Employee">
                             <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"><a class="nav-link" href="Employee/createEmp.html"
-                                        >New Employee</a></li>
-                                <li class="nav-item"><a class="nav-link" href="Employee/empIndex.html"
-                                        >All Employees</a></li>
+                                <li class="nav-item"><a class="nav-link" href="Employee/createEmp.html">New Employee</a>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" href="Employee/empIndex.html">All Employees</a>
+                                </li>
                             </ul>
                         </div>
                     </li>
@@ -51,7 +51,7 @@
                     <li class="nav-item">
                         <a class="nav-link" data-toggle="collapse" href="#Payroll" aria-expanded="false"
                             aria-control="ui-basic">
-                            <i class="fas fa-comment-dollar fa-lg text-primary" style="margin-right: 0.7em"></i>
+                            <i class="fas fa-dollar-sign fa-lg text-primary" style="margin-right: 0.7em"></i>
                             <span class="menu-title">Payroll</span>
                             <i class="nav-item"></i>
                         </a>
@@ -67,23 +67,37 @@
 
                 </ul>
             </nav>
-            <!-- welcome page -->
-            <div class="container mt-2">
-                <div class="row d-flex justify-content-center align-items-center">
-                    <div class="col-md-6 text-center">
-                        <h3 class="text-style">Welcome</h3>
-                        <p class="p-style">Paycompute Your Gateway To Ease HR Management</p>
+            <div class="container bg">
+                <div class="row m-3">
+                    <div class="col-md-12 main-panel">
+                        <div class="content-wrapper">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="col-md-6 text-center">
+                                    <h3 class="text-style">Welcome</h3>
+                                    <p>Paycompute Your Gateway To Ease HR Management</p>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="footer">
+                            <p>&copy; 2020 - Paycompute - <a href="">Privacy</a></p>
+                        </footer>
+            
                     </div>
                 </div>
             </div>
-            <!-- <div class="main-panel">
-            
-            <footer class="footer">
-                <p>&copy; @DateTime.UtcNow.Year - Paycompute - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a></p>
+            <!-- welcome page -->
+
+            <!-- <div class="panel-footer">
+                <footer class="footer mt-0 p-0">
+                    <p>&copy; 2020 - Paycompute - <a href="">Privacy</a></p>
+                </footer>
+            </div> -->
+        </div>
+        <!-- <div class="nav-footer justify-content-center align-item-center">
+            <footer class="footer mt-0 p-0">
+                <p>&copy; 2020 - Paycompute - <a href="">Privacy</a></p>
             </footer>
         </div> -->
-        </div>
-
     </div>
 
 
